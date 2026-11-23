@@ -1,0 +1,263 @@
+// Package config loads runtime configuration from a JSON file, with environment
+// variables taking precedence. Currently it carries the PostgreSQL connection.
+package config
+
+import (
+	"encoding/json"
+	"errors"
+	"fmt"
+	"io"
+	"io/fs"
+	"net/url"
+	"os"
+	"path/filepath"
+	"strconv"
+	"strings"
+)
+
+// Database is the PostgreSQL connection config. Either set DSN directly, or set
+// the component fields and a DSN is assembled from them.
+type Database struct {
+	DSN      string `json:"dsn"`
+	Host     string `json:"host"`
+	Port     int    `json:"port"`
+	User     string `json:"user"`
+	Password string `json:"password"`
+	DBName   string `json:"dbname"`
+	SSLMode  string `json:"sslmode"`
+}
+
+// Config is the on-disk config file shape.
+type Config struct {
+	Database Database `json:"database"`
+	SkillDir string   `json:"skill_dir"`
+}
+
+var ErrDatabaseNotConfigured = errors.New("no database config found")
+
+// MergeInstallDatabase preserves unknown configuration fields (including future
+// database settings) when a local install adds the initially missing connection.
+// The installer writes this result to private staging before publishing it.
+func MergeInstallDatabase(original string, proposed io.Reader, out io.Writer) error {
+	raw, err := os.ReadFile(original)
+	if err != nil {
+		return err
+	}
+	var fields map[string]json.RawMessage
+	if err = json.Unmarshal(raw, &fields); err != nil || fields == nil {
+		return errors.New("existing configuration must be a JSON object")
+	}
+	var draft struct {
+		Database map[string]json.RawMessage `json:"database"`
+	}
+	if err = json.NewDecoder(proposed).Decode(&draft); err != nil || len(draft.Database) == 0 {
+		return errors.New("missing or invalid proposed database configuration")
+	}
+	existing := map[string]json.RawMessage{}
+	if dbRaw, ok := fields["database"]; ok && string(dbRaw) != "null" {
+		if err = json.Unmarshal(dbRaw, &existing); err != nil {
+			return err
+		}
+	}
+	for k, v := range draft.Database {
+		existing[k] = v
+	}
+	fields["database"], err = json.Marshal(existing)
+	if err != nil {
+		return err
+	}
+	enc := json.NewEncoder(out)
+	enc.SetIndent("", "  ")
+	return enc.Encode(fields)
+}
+
+// BaseDir is the directory that anchors all runtime artifacts (config.json and
+// the data/ store). It is the directory the running binary lives in, so a
+// distributed executable keeps its files next to itself on any OS (Windows,
+// Linux, …) regardless of the working directory it is launched from.
+//
+// When launched via `go run`, the binary is throwaway: it sits either in a temp
+// build dir (cache miss → fresh link) OR straight inside the Go build cache
+// (cache hit → run from $GOCACHE/.../...-d). We detect both and fall back to the
+// current working directory so dev artifacts (data/, transcripts) and config
+// resolve against the project dir, not the throwaway binary's location.
+func BaseDir() string {
+	exe, err := os.Executable()
+	if err != nil {
+		return "."
+	}
+	dir := filepath.Dir(exe)
+	if isGoRunDir(dir) {
+		return "." // throwaway `go run` binary → use CWD
+	}
+	return dir
+}
+
+// KeyDir holds jwt.key and secret.key: ARTEX_MOSES_MODE_JWT_KEY_DIR (the Docker image points
+// it at the /app/keys volume) or the base dir. Never the browsable data dir.
+func KeyDir() string {
+	dir := strings.TrimSpace(os.Getenv("ARTEX_MOSES_MODE_JWT_KEY_DIR"))
+	if dir == "" {
+		dir = BaseDir()
+	}
+	if abs, err := filepath.Abs(dir); err == nil {
+		dir = abs
+	}
+	return dir
+}
+
+// isGoRunDir reports whether dir is where `go run` parked its executable: under
+// the system temp dir (cache miss), or anywhere inside a Go build cache
+// (…/go-build/…, the cache-hit case — NOT under os.TempDir(), which is why the
+// old temp-only check failed intermittently). In both cases the binary is
+// throwaway, so config/data must resolve against the CWD.
+func isGoRunDir(dir string) bool {
+	if tmp := os.TempDir(); tmp != "" {
+		if rel, err := filepath.Rel(tmp, dir); err == nil && rel != ".." && !strings.HasPrefix(rel, ".."+string(filepath.Separator)) {
+			return true
+		}
+	}
+	for _, seg := range strings.Split(filepath.ToSlash(dir), "/") {
+		if seg == "go-build" {
+			return true
+		}
+	}
+	return false
+}
+
+// Path returns the config file path. Resolution order:
+//  1. env ARTEX_MOSES_MODE_CONFIG (explicit override)
+//  2. ./config.json in the current working directory (running from the project
+//     dir — robust no matter where `go run` placed the temp/cached binary)
+//  3. config.json next to the executable (a distributed binary keeps it beside)
+//
+// The first existing file wins. If none exist, the CWD path is returned so the
+// "not found" message points at the project dir the user most likely expected.
+func Path() string {
+	if v := strings.TrimSpace(os.Getenv("ARTEX_MOSES_MODE_CONFIG")); v != "" {
+		return v
+	}
+	var candidates []string
+	if cwd, err := os.Getwd(); err == nil {
+		candidates = append(candidates, filepath.Join(cwd, "config.json"))
+	}
+	candidates = append(candidates, filepath.Join(BaseDir(), "config.json"))
+	for _, c := range candidates {
+		if _, err := os.Stat(c); err == nil {
+			return c
+		}
+	}
+	return candidates[0]
+}
+
+// Load reads and parses the config file. A missing file yields a zero Config (so
+// callers fall back to defaults). A file that exists but cannot be read or parsed
+// is an error: ignoring it would run with defaults the operator did not choose.
+func Load() (Config, error) {
+	var c Config
+	path := Path()
+	b, err := os.ReadFile(path)
+	if errors.Is(err, fs.ErrNotExist) {
+		return c, nil
+	}
+	if err != nil {
+		return c, fmt.Errorf("read config file %s: %w", path, err)
+	}
+	if err := json.Unmarshal(b, &c); err != nil {
+		return Config{}, fmt.Errorf("parse config file %s: %w", path, err)
+	}
+	return c, nil
+}
+
+// SkillDir returns the skill root directory with precedence:
+//
+//	env ARTEX_MOSES_MODE_SKILL_DIR  >  config file (skill_dir)  >  BaseDir()/skills
+//
+// The directory is created if it does not exist.
+func SkillDir() (string, error) {
+	var d string
+	if v := strings.TrimSpace(os.Getenv("ARTEX_MOSES_MODE_SKILL_DIR")); v != "" {
+		d = v
+	} else {
+		c, err := Load()
+		if err != nil {
+			return "", err
+		}
+		if v := strings.TrimSpace(c.SkillDir); v != "" {
+			d = v
+		} else {
+			d = filepath.Join(BaseDir(), "skills")
+		}
+	}
+	_ = os.MkdirAll(d, 0o755)
+	return d, nil
+}
+
+// PostgresDSN resolves the connection string with precedence:
+//
+//	env ARTEX_MOSES_MODE_PG_DSN  >  config file (database.dsn, or assembled from fields)
+//
+// There is NO built-in fallback: when neither source supplies a database config,
+// it returns an error naming the config path it inspected, so startup fails loudly
+// instead of silently connecting to a wrong default. source describes where the
+// DSN came from (for startup logging).
+func PostgresDSN() (dsn, source string, err error) {
+	if v := strings.TrimSpace(os.Getenv("ARTEX_MOSES_MODE_PG_DSN")); v != "" {
+		return v, "environment variable ARTEX_MOSES_MODE_PG_DSN", nil
+	}
+	c, err := Load()
+	if err != nil {
+		return "", "", err
+	}
+	db := c.Database
+	if d := strings.TrimSpace(db.DSN); d != "" {
+		return d, "config file " + Path() + " (database.dsn)", nil
+	}
+	if db.Host != "" || db.DBName != "" || db.User != "" {
+		return db.buildDSN(), "config file " + Path() + " (database fields)", nil
+	}
+	return "", "", fmt.Errorf("%w: the environment variable ARTEX_MOSES_MODE_PG_DSN is not set, and config file %s provides no database (dsn or host/user/dbname). Create the config file or set the environment variable and retry", ErrDatabaseNotConfigured, Path())
+}
+
+func (d Database) buildDSN() string {
+	host := d.Host
+	if host == "" {
+		host = "127.0.0.1"
+	}
+	port := d.Port
+	if port == 0 {
+		port = 5432
+	}
+	ssl := d.SSLMode
+	if ssl == "" {
+		ssl = "disable"
+	}
+	u := url.URL{
+		Scheme: "postgres",
+		Host:   host + ":" + strconv.Itoa(port),
+		Path:   "/" + d.DBName,
+	}
+	if d.User != "" {
+		if d.Password != "" {
+			u.User = url.UserPassword(d.User, d.Password)
+		} else {
+			u.User = url.User(d.User)
+		}
+	}
+	u.RawQuery = url.Values{"sslmode": {ssl}}.Encode()
+	return u.String()
+}
+
+// String is a redacted view of the resolved DSN (password masked) for logging.
+func Redact(dsn string) string {
+	u, err := url.Parse(dsn)
+	if err != nil {
+		return dsn
+	}
+	if u.User != nil {
+		if _, hasPw := u.User.Password(); hasPw {
+			u.User = url.UserPassword(u.User.Username(), "****")
+		}
+	}
+	return fmt.Sprintf("%s", u.String())
+}

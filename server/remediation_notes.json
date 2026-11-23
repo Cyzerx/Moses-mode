@@ -1,0 +1,23 @@
+{
+  "audience": "all-reviewers",
+  "notes": [
+    {
+      "title": "Scope shared records to their owner",
+      "guidance": "Bind each record to its owner at creation. Enforce the same ownership check on lists, details, attachments and exports. Verify the fix using separate synthetic accounts that share a hostname or resource label.",
+      "tags": ["access control", "isolation", "reporting"],
+      "source": "Artex-Moses-mode task-scoped asset inventory · db/assets.go",
+      "owner": "Artex-Moses-mode bundled references",
+      "reviewed": "2026-11-18",
+      "status": "current"
+    },
+    {
+      "title": "Bind a saved secret to its recipient",
+      "guidance": "Associate the credential with its approved destination. Require an explicit credential decision when the destination changes. If disclosure occurred, revoke the exposed secret and review the recipient’s access logs.",
+      "tags": ["credentials", "webhooks", "configuration"],
+      "source": "Artex-Moses-mode notification settings · notify/mask.go",
+      "owner": "Artex-Moses-mode bundled references",
+      "reviewed": "2026-11-18",
+      "status": "current"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Artex-Moses-mode</title>
+  <defs><linearGradient id="brand" x2="1" y2="1"><stop stop-color="#3932a9"/><stop offset="1" stop-color="#8b38c8"/></linearGradient></defs>
+  <rect width="512" height="512" rx="112" fill="url(#brand)"/>
+  <path d="M74 356 160 142l86 214M104 288h112M269 356V146l83 126 83-126v210" fill="none" stroke="#fff" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
