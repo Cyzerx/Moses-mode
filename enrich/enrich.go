@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/egress"
+	"github.com/Cyzerx/Moses-x1/intercept"
 
 	"github.com/miekg/dns"
 	"github.com/projectdiscovery/dnsx/libs/dnsx"

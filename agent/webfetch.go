@@ -6,8 +6,8 @@ import (
 	"net/url"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/egress"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // withWebFetch returns tools plus the WebFetch tool of an agent session. Every

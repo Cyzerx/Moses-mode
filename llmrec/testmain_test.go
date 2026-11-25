@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Run against this package's own database (db.SuffixTestDatabase, #80): the

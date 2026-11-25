@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/config"
+	"github.com/Cyzerx/Moses-x1/config"
 )
 
 // ---------- LLM profiles ----------

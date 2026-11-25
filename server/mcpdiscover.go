@@ -8,8 +8,8 @@ import (
 
 	"github.com/Autumn-27/norma/mcp"
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/mcphttp"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/mcphttp"
 )
 
 // mcpClient is the shared surface of a connected MCP server (stdio, Streamable HTTP,

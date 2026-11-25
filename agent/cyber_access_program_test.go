@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/llmrec"
+	"github.com/Cyzerx/Moses-x1/llmrec"
 )
 
 func TestValidateCyberAccessProgram(t *testing.T) {

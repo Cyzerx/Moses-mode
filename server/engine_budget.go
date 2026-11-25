@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/llmrec"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/llmrec"
 )
 
 // Hierarchical run budgets (agent/budget.go), off unless an ARTEX_MOSES_MODE_*_BUDGET_* env

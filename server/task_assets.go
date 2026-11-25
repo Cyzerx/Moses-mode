@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 const maxTaskAssetRequestBytes = 512 << 10

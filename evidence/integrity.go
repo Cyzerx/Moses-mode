@@ -7,7 +7,7 @@ import (
 	"errors"
 	"os"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 type IntegrityIssue struct {

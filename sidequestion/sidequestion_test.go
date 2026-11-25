@@ -13,7 +13,7 @@ import (
 
 	"github.com/Autumn-27/norma/harness"
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/llmpool"
+	"github.com/Cyzerx/Moses-x1/llmpool"
 )
 
 type fakeProvider struct {

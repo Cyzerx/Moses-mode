@@ -28,7 +28,7 @@ import (
 
 	"github.com/Autumn-27/norma/llm"
 	"github.com/Autumn-27/norma/transcript"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Compactor performs background cold-node compaction for many explorations.

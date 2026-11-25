@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 func TestStageAskOperatorImage(t *testing.T) {

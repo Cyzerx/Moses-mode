@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 const maxBatchControlIDs = 100

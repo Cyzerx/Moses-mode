@@ -18,7 +18,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/Cyzerx/Artex-Moses-mode/config"
+	"github.com/Cyzerx/Moses-x1/config"
 )
 
 const (

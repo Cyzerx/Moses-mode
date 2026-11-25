@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 func workflowCall(t *testing.T, ctx context.Context, tool actool.CoreTool, input any, wantError bool) string {

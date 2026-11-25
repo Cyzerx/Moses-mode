@@ -10,8 +10,8 @@ import (
 	"github.com/Autumn-27/norma/permission"
 	actool "github.com/Autumn-27/norma/tool"
 	"github.com/Autumn-27/norma/transcript"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // MainAgent is the thin human-interface orchestrator (docs §4.2 / §7). The human

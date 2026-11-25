@@ -11,10 +11,10 @@
 Self-hosted multi-agent offensive security. A planner explores, workers run real tools,
 and every finding stays bound to the assets and HTTP traffic that prove it.
 
-[![Release](https://img.shields.io/github/v/release/Cyzerx/Artex-Moses-mode?label=release&color=6b34db)](https://github.com/Cyzerx/Artex-Moses-mode/releases)
-[![License](https://img.shields.io/github/license/Cyzerx/Artex-Moses-mode?color=6b34db)](LICENSE)
-[![CI](https://github.com/Cyzerx/Artex-Moses-mode/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Cyzerx/Artex-Moses-mode/actions/workflows/ci.yml)
-[![Go](https://img.shields.io/github/go-mod/go-version/Cyzerx/Artex-Moses-mode?color=6b34db)](go.mod)
+[![Release](https://img.shields.io/github/v/release/Cyzerx/Moses-x1?label=release&color=6b34db)](https://github.com/Cyzerx/Moses-x1/releases)
+[![License](https://img.shields.io/github/license/Cyzerx/Moses-x1?color=6b34db)](LICENSE)
+[![CI](https://github.com/Cyzerx/Moses-x1/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Cyzerx/Moses-x1/actions/workflows/ci.yml)
+[![Go](https://img.shields.io/github/go-mod/go-version/Cyzerx/Moses-x1?color=6b34db)](go.mod)
 
 [Quick start](#quick-start) · [How it works](#how-it-works) · [Install](#installation) · [Configuration](#configuration) · [Security](SECURITY.md)
 
@@ -44,8 +44,8 @@ justify it, and every autonomous action passes through scope rules, approval gat
 ## Quick start
 
 ```bash
-git clone https://github.com/Cyzerx/Artex-Moses-mode.git
-cd Artex-Moses-mode
+git clone https://github.com/Cyzerx/Moses-x1.git
+cd Moses-x1
 cp .env.example .env            # set POSTGRES_PASSWORD (and optionally an LLM key)
 docker compose up -d --build    # builds from this checkout, starts PostgreSQL
 ```
@@ -283,8 +283,8 @@ worker remains confined to the intent it claimed.
 ### Option 1: one-click install script (recommended)
 
 ```bash
-git clone https://github.com/Cyzerx/Artex-Moses-mode.git
-cd Artex-Moses-mode
+git clone https://github.com/Cyzerx/Moses-x1.git
+cd Moses-x1
 ./install.sh
 ```
 
@@ -314,8 +314,8 @@ first-run claim), or keep loopback and use a reverse proxy or SSH tunnel.
 ### Option 2: Docker Compose (manual)
 
 ```bash
-git clone https://github.com/Cyzerx/Artex-Moses-mode.git
-cd Artex-Moses-mode
+git clone https://github.com/Cyzerx/Moses-x1.git
+cd Moses-x1
 cp .env.example .env            # set POSTGRES_PASSWORD, optionally ANTHROPIC_API_KEY
 docker compose up -d --build
 # → http://localhost:8787
@@ -330,7 +330,7 @@ Legacy SSE servers usually establish the event stream with `GET /sse` and receiv
 
 ### Option 3: prebuilt binaries (Releases)
 
-Download the zip for your platform from [Releases](https://github.com/Cyzerx/Artex-Moses-mode/releases). It
+Download the zip for your platform from [Releases](https://github.com/Cyzerx/Moses-x1/releases). It
 contains `artex-moses-mode`, `start.sh` (`start.bat` on Windows), `skills/` and `config.example.json`:
 
 ```bash
@@ -350,7 +350,7 @@ neither.
 
 ```bash
 sha256sum -c SHA256SUMS                           # add --ignore-missing if you downloaded only some zips
-gh attestation verify <zip> --repo Cyzerx/Artex-Moses-mode   # built by this repository's release workflow
+gh attestation verify <zip> --repo Cyzerx/Moses-x1   # built by this repository's release workflow
 ```
 
 ### Option 4: build the single binary from source
@@ -582,7 +582,7 @@ Your data is unaffected: `./data`, the `pgdata` volume and `./skills` are not pa
 #### Option 1: one-click update script
 
 ```bash
-cd Artex-Moses-mode
+cd Moses-x1
 ./update.sh
 ```
 
@@ -593,7 +593,7 @@ recompile `./artex-moses-mode`; restart the process for it to take effect).
 #### Option 2: Docker Compose (manual)
 
 ```bash
-cd Artex-Moses-mode
+cd Moses-x1
 git pull
 docker compose build artex-moses-mode
 docker compose up -d artex-moses-mode

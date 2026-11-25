@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // The gate inside the custom tools: GateRenderedURL and GateRenderedCommand

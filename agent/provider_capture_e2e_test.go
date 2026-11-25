@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/llmrec"
+	"github.com/Cyzerx/Moses-x1/llmrec"
 )
 
 // End-to-end through a real norma provider: the Capture rides the context into

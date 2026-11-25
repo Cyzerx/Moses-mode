@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 const verificationBody = "HTTP/1.1 200 OK\nuser   admin:\tx7\nend of dump"

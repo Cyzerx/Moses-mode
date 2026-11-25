@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Block codes of the gate decision. Like the codes of a target request they

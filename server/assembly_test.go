@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // hasSkillTool reports whether the packed tool set contains the Skill meta-tool.

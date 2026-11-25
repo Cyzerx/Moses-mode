@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Task-level timeout coordinator (see docs/task-timeout-and-settle-design.md §4/§8.5).

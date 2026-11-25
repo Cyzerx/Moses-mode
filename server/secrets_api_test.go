@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // No read endpoint returns a stored secret in clear, and a masked placeholder

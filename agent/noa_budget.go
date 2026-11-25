@@ -7,7 +7,7 @@ import (
 	"iter"
 
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/sidequestion"
+	"github.com/Cyzerx/Moses-x1/sidequestion"
 )
 
 // noaRequestOverhead covers request framing the input estimate does not count.

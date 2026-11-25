@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // ctxKey is the unexported context key type to avoid collisions.

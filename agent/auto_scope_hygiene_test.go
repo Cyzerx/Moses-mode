@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // TestTaskScopeLabelIsHonest pins the task_scope wording while the RoE is not

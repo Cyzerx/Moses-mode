@@ -3,7 +3,7 @@ package agent
 import (
 	"strings"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // constraintBlock renders this task's operation constraints (task_constraints) as a

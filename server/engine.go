@@ -13,9 +13,9 @@ import (
 
 	"github.com/Autumn-27/norma/harness"
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/intercept"
 	"github.com/jackc/pgx/v5/pgconn"
 )
 

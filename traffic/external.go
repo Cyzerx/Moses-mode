@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // ExternalExchange is one captured request/response pair handed in from

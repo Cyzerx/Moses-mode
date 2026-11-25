@@ -12,7 +12,7 @@ import (
 
 	acperm "github.com/Autumn-27/norma/permission"
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // scanMaxFileBytes caps the scanner output file read by ingest_scan_output.

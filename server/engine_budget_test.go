@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	pgdb "github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/agent"
+	pgdb "github.com/Cyzerx/Moses-x1/db"
 )
 
 // With the budget env vars unset the engine decides exactly as before (no round

@@ -7,7 +7,7 @@ import (
 	"errors"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 func (t *ToolSet) credentialTaskID() (int64, error) {

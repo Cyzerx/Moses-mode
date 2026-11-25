@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/notify"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/notify"
 )
 
 // This file is the HTTP API for the notification delivery feature. All routes are

@@ -4,7 +4,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // An operator may exempt a private unicast IP literal, never a loopback,

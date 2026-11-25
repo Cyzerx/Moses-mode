@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
+	"github.com/Cyzerx/Moses-x1/agent"
 )
 
 func TestEngineDeleteBarrierRejectsNewTaskOperations(t *testing.T) {

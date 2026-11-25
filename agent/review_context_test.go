@@ -9,9 +9,9 @@ import (
 
 	"github.com/Autumn-27/norma/llm"
 	"github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/guard"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/guard"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // Real PostgreSQL + SDK hooks: Worker reviews receive the current call only.

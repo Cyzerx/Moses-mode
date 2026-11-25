@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"io"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // The template contains no scripts, external resources or live evidence links.

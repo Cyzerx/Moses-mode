@@ -3,7 +3,7 @@ package agent
 import (
 	"log"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // coverageOn reports whether asset-coverage tools stay available for this task.

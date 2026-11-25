@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	pgdb "github.com/Cyzerx/Artex-Moses-mode/db"
+	pgdb "github.com/Cyzerx/Moses-x1/db"
 	"github.com/klauspost/compress/zstd"
 )
 

@@ -19,11 +19,11 @@ import (
 
 	"github.com/Autumn-27/norma/permission"
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
-	"github.com/Cyzerx/Artex-Moses-mode/guard"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
-	"github.com/Cyzerx/Artex-Moses-mode/notify"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/egress"
+	"github.com/Cyzerx/Moses-x1/guard"
+	"github.com/Cyzerx/Moses-x1/intercept"
+	"github.com/Cyzerx/Moses-x1/notify"
 )
 
 // This file implements the custom tool executor (docs/custom-tool-design.md). tools rows

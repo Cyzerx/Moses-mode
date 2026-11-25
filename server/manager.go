@@ -17,15 +17,15 @@ import (
 	"time"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/config"
-	pgdb "github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
-	"github.com/Cyzerx/Artex-Moses-mode/enrich"
-	"github.com/Cyzerx/Artex-Moses-mode/guard"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
-	"github.com/Cyzerx/Artex-Moses-mode/traffic/rewrite"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/config"
+	pgdb "github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/egress"
+	"github.com/Cyzerx/Moses-x1/enrich"
+	"github.com/Cyzerx/Moses-x1/guard"
+	"github.com/Cyzerx/Moses-x1/intercept"
+	"github.com/Cyzerx/Moses-x1/traffic"
+	"github.com/Cyzerx/Moses-x1/traffic/rewrite"
 )
 
 // Task is one engagement: a description + goal + its own exploration store,

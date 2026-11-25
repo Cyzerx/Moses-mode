@@ -17,9 +17,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/config"
-	"github.com/Cyzerx/Artex-Moses-mode/server"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/config"
+	"github.com/Cyzerx/Moses-x1/server"
 )
 
 // version is the build version, injected at release time via

@@ -15,7 +15,7 @@ import (
 // The update check is opt-in: only ARTEX_MOSES_MODE_UPDATE_CHECK=1 (or true/on/yes) lets
 // the backend ask the public GitHub releases API for the latest Artex-Moses-mode tag.
 // Unset, it makes no request at all and the UI shows no banner.
-const updateCheckURL = "https://api.github.com/repos/Cyzerx/Artex-Moses-mode/releases/latest"
+const updateCheckURL = "https://api.github.com/repos/Cyzerx/Moses-x1/releases/latest"
 const updateCheckInterval = 24 * time.Hour
 
 func updateCheckEnabled() bool {

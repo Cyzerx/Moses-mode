@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/traffic/rewrite"
+	"github.com/Cyzerx/Moses-x1/traffic/rewrite"
 	"github.com/gorilla/websocket"
 	mproxy "github.com/lqqyt2423/go-mitmproxy/proxy"
 )

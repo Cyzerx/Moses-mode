@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // The declared forms of a call decide first: the URL block rules on the URLs

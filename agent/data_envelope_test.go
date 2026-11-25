@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Pure tests for the F3 data envelope (#124): no database.

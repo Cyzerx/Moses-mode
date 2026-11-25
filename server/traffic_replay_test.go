@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
+	"github.com/Cyzerx/Moses-x1/traffic"
 )
 
 // replayServer wires a Server like ingestServer. With traffic off,

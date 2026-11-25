@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/Cyzerx/Artex-Moses-mode/sidequestion"
+	"github.com/Cyzerx/Moses-x1/sidequestion"
 	"github.com/google/uuid"
 )
 

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Pure: report_finding advertises counterevidence / confidence_rationale as

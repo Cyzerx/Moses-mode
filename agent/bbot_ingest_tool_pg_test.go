@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // A benign bbot output: one in-scope host, one out-of-scope host, one event

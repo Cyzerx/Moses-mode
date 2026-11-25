@@ -11,9 +11,9 @@ import (
 	"testing"
 
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/guard"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/guard"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // Every agent kind hands its tool calls to the hooks it is given, on the context

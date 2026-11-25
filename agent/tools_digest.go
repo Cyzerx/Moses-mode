@@ -13,7 +13,7 @@ import (
 	"sort"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // digestMemberEntry builds the compact per-member view expand_digest returns —

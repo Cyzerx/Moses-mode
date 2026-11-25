@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/notify"
+	"github.com/Cyzerx/Moses-x1/notify"
 )
 
 var (

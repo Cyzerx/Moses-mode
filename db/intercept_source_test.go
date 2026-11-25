@@ -3,8 +3,8 @@ package db_test
 import (
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // The judge writer (package intercept) and the decision_source readers (package

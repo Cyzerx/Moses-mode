@@ -9,7 +9,7 @@ import (
 
 	acperm "github.com/Autumn-27/norma/permission"
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // compactIntents distills intents to {id, summary, state, asset_ids, parents,

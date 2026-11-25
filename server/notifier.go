@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/notify"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/notify"
 )
 
 // Global setting keys (stored in the settings key-value table, no dedicated table needed).

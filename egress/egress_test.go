@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // open is a profile that does not limit, for the tests of one lever.

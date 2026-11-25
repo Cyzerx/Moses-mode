@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 func TestTaskOutcomeCard(t *testing.T) {

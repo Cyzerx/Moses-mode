@@ -3,7 +3,7 @@ package agent
 import (
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // The domain tools read and write the platform's own records (the exploration

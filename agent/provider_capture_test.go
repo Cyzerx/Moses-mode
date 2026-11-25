@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/llmrec"
+	"github.com/Cyzerx/Moses-x1/llmrec"
 )
 
 // The transport is the only layer that still sees the wire bodies: norma builds

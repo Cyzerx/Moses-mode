@@ -3,7 +3,7 @@ package server
 import (
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // A stored catalog entry that collides with a global runtime var (e.g. a legacy

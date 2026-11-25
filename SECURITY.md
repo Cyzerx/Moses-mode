@@ -14,7 +14,7 @@ Notes:
 
 **Do not open a public issue for a security vulnerability.**
 
-Report through **GitHub Security Advisories**: **Security** tab → **Report a vulnerability** in the `Cyzerx/Artex-Moses-mode` repository. This is the only reporting channel.
+Report through **GitHub Security Advisories**: **Security** tab → **Report a vulnerability** in the `Cyzerx/Moses-x1` repository. This is the only reporting channel.
 
 Please include:
 - A description of the vulnerability and its expected impact.

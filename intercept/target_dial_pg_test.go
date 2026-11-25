@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Step 2.1 against PostgreSQL: a connection no pin covers at the dial opens or

@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/Autumn-27/norma/agentcore"
-	"github.com/Cyzerx/Artex-Moses-mode/sidequestion"
+	"github.com/Cyzerx/Moses-x1/sidequestion"
 )
 
 func attachSideCapture(ctx context.Context, opts *agentcore.Options) context.Context {

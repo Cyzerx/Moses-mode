@@ -10,8 +10,8 @@ import (
 	"github.com/Autumn-27/norma/skill"
 	actool "github.com/Autumn-27/norma/tool"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // maxLedgerSkillName caps the skill name stored for a MISS — that string comes

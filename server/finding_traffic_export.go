@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/evidence"
-	"github.com/Cyzerx/Artex-Moses-mode/report"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/evidence"
+	"github.com/Cyzerx/Moses-x1/report"
 )
 
 func writeFindingsEvidenceZip(out io.Writer, findings []*db.DBFinding, stage string, now time.Time) error {

@@ -13,9 +13,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
-	"github.com/Cyzerx/Artex-Moses-mode/traffic/rewrite"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/traffic"
+	"github.com/Cyzerx/Moses-x1/traffic/rewrite"
 )
 
 const rewriteAPI = "/api/traffic/rewrite-rules"

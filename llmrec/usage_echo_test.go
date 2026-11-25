@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 	"github.com/google/uuid"
 )
 

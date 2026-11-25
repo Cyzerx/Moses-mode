@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
+	"github.com/Cyzerx/Moses-x1/egress"
 )
 
 func TestNoiseProfileSettingHTTP(t *testing.T) {

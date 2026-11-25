@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // cgNode is the minimal node view the cold-graph algorithms need.

@@ -6,7 +6,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 func TestArgvArityTable(t *testing.T) {

@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Step 2.1: the pinned dialer of the platform-owned HTTP clients. Without a

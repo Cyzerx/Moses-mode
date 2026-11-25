@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Initialize an explicitly configured fresh database before taking the same

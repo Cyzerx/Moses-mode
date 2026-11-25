@@ -27,7 +27,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // Profile is one noise level. The zero Profile is off. Later levers (scanner

@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/Autumn-27/norma/harness"
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
+	"github.com/Cyzerx/Moses-x1/agent"
 )
 
 // A NOA budget refusal is deterministic: the engine must not rerun the intent,

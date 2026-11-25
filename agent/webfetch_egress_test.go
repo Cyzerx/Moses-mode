@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/egress"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // pinNoiseOff runs t with the off noise profile, whatever ARTEX_MOSES_MODE_NOISE_PROFILE says.

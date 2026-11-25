@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/Autumn-27/norma/llm"
-	"github.com/Cyzerx/Artex-Moses-mode/sidequestion"
+	"github.com/Cyzerx/Moses-x1/sidequestion"
 )
 
 func sideFixture(t *testing.T) (*DB, sidequestion.Snapshot) {

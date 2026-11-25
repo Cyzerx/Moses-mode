@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	pgdb "github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
+	"github.com/Cyzerx/Moses-x1/agent"
+	pgdb "github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/traffic"
 )
 
 const taskArchivePollInterval = 2 * time.Second

@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // Intercept rules run before the judge: a call a rule covers never reaches the

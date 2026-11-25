@@ -7,7 +7,7 @@ import (
 	"net/netip"
 	"strings"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // metadataAddrs are instance-metadata addresses that lie outside the link-local

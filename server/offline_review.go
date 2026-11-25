@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Cyzerx/Artex-Moses-mode/report"
+	"github.com/Cyzerx/Moses-x1/report"
 )
 
 func (s *Server) offlineFindingReview(w http.ResponseWriter, r *http.Request, ids []int64) {

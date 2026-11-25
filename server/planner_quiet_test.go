@@ -3,7 +3,7 @@ package server
 import (
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Planner quiet-mode (#79): an edge round is dropped only when BOTH hold — the

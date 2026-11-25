@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
+	"github.com/Cyzerx/Moses-x1/agent"
 )
 
 // The shutdown cause must survive the parent context being cancelled first;

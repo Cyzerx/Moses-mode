@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
+	"github.com/Cyzerx/Moses-x1/agent"
 )
 
 // SeedTool only inserts new rows. Repair existing built-ins too, while keeping

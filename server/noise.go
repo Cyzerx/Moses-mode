@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/egress"
 )
 
 // startupNoiseProfile is the noise profile to apply at startup: the stored

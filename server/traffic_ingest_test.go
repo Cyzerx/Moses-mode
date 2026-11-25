@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
+	"github.com/Cyzerx/Moses-x1/traffic"
 )
 
 // ingestServer wires a Server with a live traffic store, like

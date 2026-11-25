@@ -28,8 +28,8 @@ import (
 	"github.com/Autumn-27/norma/llm"
 	acperm "github.com/Autumn-27/norma/permission"
 	"github.com/Autumn-27/norma/transcript"
-	"github.com/Cyzerx/Artex-Moses-mode/config"
-	"github.com/Cyzerx/Artex-Moses-mode/llmrec"
+	"github.com/Cyzerx/Moses-x1/config"
+	"github.com/Cyzerx/Moses-x1/llmrec"
 )
 
 // Config describes the LLM backend resolved from the environment.

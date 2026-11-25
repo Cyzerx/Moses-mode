@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // ingest_scan_output (PG): an nmap file writes its assets through insert_assets

@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // LogLine is one captured backend log entry exposed by the /api/logs endpoints.

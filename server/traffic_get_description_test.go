@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
+	"github.com/Cyzerx/Moses-x1/traffic"
 )
 
 // The traffic_get description that says traffic_search never finds a value a

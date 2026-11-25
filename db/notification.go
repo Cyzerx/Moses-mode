@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/notify"
+	"github.com/Cyzerx/Moses-x1/notify"
 )
 
 // This file is the channel configuration and event layer for IM delivery. Claiming

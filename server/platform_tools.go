@@ -10,7 +10,7 @@ import (
 	"time"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Platform operation tools (for the built-in Auto agent): create/edit skills,

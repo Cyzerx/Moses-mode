@@ -9,8 +9,8 @@ import (
 	"unicode/utf8"
 
 	"github.com/Autumn-27/norma/hook"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // A guard with no interceptor no longer hard-blocks anything: destructive/exfil

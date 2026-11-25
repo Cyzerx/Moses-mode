@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/traffic"
 )
 
 // DTO/serialization layer: each handler emits EXACTLY the frontend's spec shapes

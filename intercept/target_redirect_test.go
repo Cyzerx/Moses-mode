@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Step 1.9: every redirect hop of a platform-owned client goes through the gate.

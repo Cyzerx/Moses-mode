@@ -3,7 +3,7 @@ package server
 import (
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // The cost ledger: profile prices (EUR per 1M tokens) turn token buckets into

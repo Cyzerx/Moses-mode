@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Task credentials (#3): declared at creation, listed/upserted/deleted via the

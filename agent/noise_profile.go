@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
+	"github.com/Cyzerx/Moses-x1/egress"
 )
 
 // noiseProfileHeader starts the code-owned noise block. The block is appended to

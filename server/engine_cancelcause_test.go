@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
+	"github.com/Cyzerx/Moses-x1/agent"
 )
 
 func TestWaitBlocksUntilDetachedInflightEnds(t *testing.T) {

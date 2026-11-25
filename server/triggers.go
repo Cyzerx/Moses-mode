@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // ---------- P3 agent triggers (custom agents only) ----------

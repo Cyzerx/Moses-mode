@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 func TestInheritedActivityDetailAndRelationDeletion(t *testing.T) {

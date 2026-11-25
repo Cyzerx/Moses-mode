@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // TestCoreTaskLifecyclePG exercises the migrated core (tasks/exploration on PG)

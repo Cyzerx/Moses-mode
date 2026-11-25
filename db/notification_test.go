@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/notify"
+	"github.com/Cyzerx/Moses-x1/notify"
 )
 
 // Every case in this file connects to a real PostgreSQL (skipped when unavailable).

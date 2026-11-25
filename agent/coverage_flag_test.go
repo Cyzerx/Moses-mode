@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // A failed coverage-flag read stays enabled: the log says so, the worker keeps

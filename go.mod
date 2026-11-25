@@ -1,4 +1,4 @@
-module github.com/Cyzerx/Artex-Moses-mode
+module github.com/Cyzerx/Moses-x1
 
 go 1.26.10
 

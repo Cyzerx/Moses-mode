@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/Autumn-27/norma/hook"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // AuditEntry records one gated tool call.

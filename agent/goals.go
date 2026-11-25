@@ -11,7 +11,7 @@ import (
 	acperm "github.com/Autumn-27/norma/permission"
 	actool "github.com/Autumn-27/norma/tool"
 	"github.com/Autumn-27/norma/transcript"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // goalsDefaultTmpl is the built-in EDITABLE body (section [A]) of the goals-decomposer

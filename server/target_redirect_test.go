@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/db"
+	"github.com/Cyzerx/Moses-x1/db"
 )
 
 // Step 1.9: the redirect hops of the custom http tool and of a worker's

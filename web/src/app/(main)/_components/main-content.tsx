@@ -33,7 +33,7 @@ function isFullBleed(pathname: string) {
   return normalized.startsWith("/function/tasks/");
 }
 
-const RELEASES_URL = "https://github.com/Cyzerx/Artex-Moses-mode/releases";
+const RELEASES_URL = "https://github.com/Cyzerx/Moses-x1/releases";
 const UPDATE_DISMISSED_KEY = "artex-moses-mode-update-dismissed";
 
 export function MainContent({ children }: { children: ReactNode }) {

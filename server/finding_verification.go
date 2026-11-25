@@ -13,9 +13,9 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/Cyzerx/Artex-Moses-mode/agent"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/evidence"
+	"github.com/Cyzerx/Moses-x1/agent"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/evidence"
 )
 
 // S1 receipt check. A finding is verified only when a proof/verification

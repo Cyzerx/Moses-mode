@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/enrich"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
+	"github.com/Cyzerx/Moses-x1/enrich"
+	"github.com/Cyzerx/Moses-x1/intercept"
 )
 
 // F13: the HTTP probe of the enrich engine connects through the pinned dialer.

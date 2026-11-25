@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Cyzerx/Artex-Moses-mode/egress"
+	"github.com/Cyzerx/Moses-x1/egress"
 	mproxy "github.com/lqqyt2423/go-mitmproxy/proxy"
 )
 

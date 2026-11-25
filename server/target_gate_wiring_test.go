@@ -11,9 +11,9 @@ import (
 	"time"
 
 	actool "github.com/Autumn-27/norma/tool"
-	"github.com/Cyzerx/Artex-Moses-mode/db"
-	"github.com/Cyzerx/Artex-Moses-mode/intercept"
-	"github.com/Cyzerx/Artex-Moses-mode/traffic"
+	"github.com/Cyzerx/Moses-x1/db"
+	"github.com/Cyzerx/Moses-x1/intercept"
+	"github.com/Cyzerx/Moses-x1/traffic"
 )
 
 // The gate wired into the server: the exemption API, the exemptions derived
